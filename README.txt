@@ -4,6 +4,8 @@ Based on a Zen child theme for Drupal 6.x. Originally created by Cole Cooper
 for the Department of Computing and Informaiton Sciences to match KSU branding.
 The theme was originally created in 2011.
 
+https://github.com/chrono101/ksu-drupal6-theme
+
 Original Author: Cole Cooper (colecoop@ksu.edu)
 Last Modified By: Cole Cooper (colecoop@ksu.edu)
 Last Modified Date: 4/16/2013
