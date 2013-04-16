@@ -1,0 +1,317 @@
+/* $Id: nice_menus_default.css,v 1.6 2007/10/29 16:38:28 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  To help understand the CSS, the HTML looks like this, where
+    x is a number;
+    TYPE is down/left/right;
+    PATH is the menu path such as node/343;
+    MID is the menu id such as 33):
+  <ul id='nice-menu-x' class='nice-menu nice-menu-TYPE'>
+    <li id='menu-MID' class='menu-path-PATH'><a href='#'>This is a menu item</a></li>
+    <li class='menuparent menu-path-PATH'><a href='#'>A submenu</a>
+      <ul...><li...>...</li>
+      </ul>
+    </li>
+    ...
+  </ul>
+
+  If you have more than one nice-menu and want to target a particular one,
+  use its id (e.g. ul#nice-menu-2).
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for some CSS customization examples.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+ul.nice-menu,
+ul.nice-menu ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0;
+  z-index: 998;
+}
+
+.block-nice_menus {
+  z-index: 998 !important;
+}
+
+ul.nice-menu li {
+  float: left;
+  color: #333333;
+  /* Additional overrides to deal with Garland theme. */
+  margin: 0;
+  padding-left: 0;
+  background-image: none;
+}
+
+ul.nice-menu a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;  
+  font-size: 0.8461em; /* 1em = 13px: 0.8461em * 13px = 11px */
+  padding: 7px 0 8px 10px;
+
+}
+
+ul.nice-menu ul li {
+  width: 175px;
+}
+
+/* Overrides for Garland header. */
+#header-region ul.nice-menu li {
+  margin: 0;
+  /* Padding rules are needed to deal with Garland's header line-height. */
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  background: #eee;
+}
+
+ul.nice-menu ul,
+/* Repeat for Garland header. */
+#header-region ul.nice-menu ul {
+  top: 1.8em;
+  left: -1px;
+  border: 0;
+  margin-right: 0;
+}
+
+/* Override for Garland header. */
+#header-region ul.nice-menu ul {
+  top: 1.7em;
+}
+
+
+/******************************
+ VERTICAL (left/right) menus
+******************************/
+
+/* This is the default width of all vertical menus. */
+ul.nice-menu-right, ul.nice-menu-left,
+ul.nice-menu-right li, ul.nice-menu-left li {
+  width: 175px;
+}
+
+/* VERTICAL menus where submenus pop RIGHT (default). */
+ul.nice-menu-right ul {
+  width: 175px;
+  left: 175px;
+  top: -1px;
+  border-left: solid 1px white;
+  z-index: 998;
+  padding-left: 0;
+}
+
+ul.nice-menu-right a {
+  padding: 7px 0 8px 10px;
+}
+
+ul.nice-menu-right li {
+  border-bottom: 1px solid white;
+  background-color: #e2e0d6;
+}
+
+ul.nice-menu-right ul ul {
+  width: 175px;
+  left: 175px;
+  top: -1px;
+  z-index: 998;
+  padding-left: 0;
+}
+
+ul.nice-menu-right li.menuparent,
+ul.nice-menu-right li li.menuparent {
+  background: #e2e0d6 url('../images/arrow-right.png') right center no-repeat;
+}
+
+ul.nice-menu-right li:hover {
+  background-color: #ecd391;
+}
+
+ul.nice-menu-right li.first {
+  border-radius: 8px 8px 0 0;
+}
+
+ul.nice-menu-right li.last {
+  border-radius: 0 0 8px 8px;
+}
+
+ul.nice-menu-right li.menuparent:hover,
+ul.nice-menu-right li.over,
+ul.nice-menu-right li li.menuparent:hover,
+ul.nice-menu-right li li.over {
+  background: #ecd391 url('../images/arrow-right.png') right center no-repeat;
+}
+
+/* VERTICAL menus where submenus pop LEFT. */
+ul.nice-menu-left li ul {
+  width: 200px;
+  left: -12.65em;
+  top: -1px;
+}
+
+ul.nice-menu-left li ul li ul {
+  width: 200px;
+  left: -12.65em;
+  top: -1px;
+}
+
+ul.nice-menu-left li.menuparent,
+ul.nice-menu-left li li.menuparent {
+  background: #D1CFC0 url('../images/arrow-left.png') left center no-repeat;
+}
+
+ul.nice-menu-left li.menuparent:hover,
+ul.nice-menu-left li.over,
+ul.nice-menu-left li li.menuparent:hover,
+ul.nice-menu-left li li.over {
+  background: #ccc url('../images/arrow-left.png') left center no-repeat;
+}
+
+ul.nice-menu-left a, ul.nice-menu-left ul a {
+  padding-left: 14px;
+}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
+  width: 960px;
+  float: none !important;
+  margin: 0 auto 0 auto !important;
+  padding: 0 0 0 0px !important;
+  height: 52px;
+  background: #512888; /* Old browsers */
+  background: -moz-linear-gradient(top, #512888 0%, #7346AA 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#512888), color-stop(100%,#7346AA)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #512888 0%,#7346AA 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #512888 0%,#7346AA 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #512888 0%,#7346AA 100%); /* IE10+ */
+  background: linear-gradient(top, #512888 0%,#7346AA 100%); /* W3C */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#512888', endColorstr='#7346AA',GradientType=0 ); /* IE6-9 */
+}
+
+ul.nice-menu-down li {
+  background-color: #e2e0d6;
+}
+
+ul.nice-menu-down > li {
+  height: 52px;
+  border-right: 1px solid white;
+  font-family: Arial;
+  background: #7346aa; /* Old browsers */
+  background: -moz-linear-gradient(top, #7346aa 0%, #512888 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7346aa), color-stop(100%,#512888)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7346aa 0%,#512888 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7346aa 0%,#512888 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7346aa 0%,#512888 100%); /* IE10+ */
+  background: linear-gradient(top, #7346aa 0%,#512888 100%); /* W3C */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7346aa', endColorstr='#512888',GradientType=0 ); /* IE6-9 */
+}
+
+ul.nice-menu-down > li:hover {
+  background: #512888; /* Old browsers */
+  background: -moz-linear-gradient(top, #512888 0%, #7346aa 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#512888), color-stop(100%,#7346aa)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #512888 0%,#7346aa 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #512888 0%,#7346aa 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #512888 0%,#7346aa 100%); /* IE10+ */
+  background: linear-gradient(top, #512888 0%,#7346aa 100%); /* W3C */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#512888', endColorstr='#7346aa',GradientType=0 ); /* IE6-9 */
+}
+
+ul.nice-menu-down > li.first {
+  width: 180px;
+}
+
+ul.nice-menu-down > li.first,
+ul.nice-menu-down > li.last {
+  border-radius: 0 0 0 0;
+}
+
+ul.nice-menu-down li:hover {
+  background-color: #ecd391;
+}
+
+ul.nice-menu-down ul li.first {
+  /*border-radius: 8px 8px 0 0;*/
+}
+
+ul.nice-menu-down ul li.last {
+  /*border-radius: 0 0 8px 8px;*/
+}
+
+
+ul.nice-menu-down > li > a {
+  color: white;
+  padding: 0 10px 0 10px;
+  font-size: 1.23em; /* 1em = 13px. 1.23em * 13px = 16px */
+  line-height: 52px;
+}
+
+
+ul.nice-menu-down li a:hover {
+}
+
+ul.nice-menu-down li li {
+  border-bottom: 1px solid #333333;
+  border-right: none;
+}
+
+ul.nice-menu-down ul {
+  top: 52px;
+  width: 520px;
+  left: 0;
+  background-color: #e2e0d6;
+  border-top: 1px solid white;
+  border: 1px solid #333333;
+  padding: 10px 10px 10px 10px;
+  -webkit-box-shadow: 4px 4px 4px;
+  box-shadow: 4px 4px 4px; 
+}
+
+ul.nice-menu-down ul li {
+  display: inline;
+}
+
+ul.nice-menu-down ul ul {
+  padding: 0 0 0 0;
+  margin 0 0 0 0;
+  border: none;
+  left: 180px;
+  top: 0px;
+}
+
+ul.nice-menu-down ul li {
+  height: default;
+  clear: both;
+}
+
+ul.nice-menu-down li ul li ul {
+}
+
+ul.nice-menu-down .menuparent a {
+  
+}
+
+ul.nice-menu-down li.menuparent {
+}
+
+ul.nice-menu-down li.menuparent:hover,
+ul.nice-menu-down li.over {
+}
+
+ul.nice-menu-down li li.menuparent {
+}
+
+ul.nice-menu-down li li.menuparent:hover,
+ul.nice-menu-down li li.over {
+}

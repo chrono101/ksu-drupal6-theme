@@ -1,0 +1,131 @@
+/* $Id: tabs.css,v 1.2 2009/08/12 08:03:53 johnalbin Exp $ */
+
+/**
+ * @file
+ * Tabs Styling
+ *
+ * Adds styles for the primary and secondary tabs.
+ *
+ * Compare this with default CSS found in the system module's stylesheet (a copy
+ * of which is in drupal6-reference.css, line 510.)
+ */
+
+
+div.tabs {
+  margin: 0 0 5px 0;
+}
+
+ul.primary {
+  margin: 0;
+  height: 20px;
+  padding: 4px 0 0 10px; /* LTR */
+  border-width: 0;
+  list-style: none;
+  white-space: nowrap;
+  line-height: normal;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #512888;
+  background-color: #512888;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7346aa), to(#512888));
+  background-image: -webkit-linear-gradient(top, #7346aa, #512888);
+  background-image:    -moz-linear-gradient(top, #7346aa, #512888);
+  background-image:     -ms-linear-gradient(top, #7346aa, #512888);
+  background-image:      -o-linear-gradient(top, #7346aa, #512888);
+  background-image:         linear-gradient(top, #7346aa, #512888);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#512888', endColorstr='#7646aa',GradientType=0 ); /* IE6-9 */
+}
+
+ul.primary li {
+  float: left; /* LTR */
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+
+ul.primary li a {
+  display: block;
+  height: 16px;
+  margin: 0;
+  padding: 0 0 0 0; /* width of tab-left.png */
+  border-width: 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333333;
+  background-color: transparent;
+  border-radius: 3px 3px 0 0;
+}
+
+ul.primary li a .tab {
+  display: block;
+  /*height: 22px; /* 24px (parent) - 4px (padding) */
+  margin: 0;
+  padding: 0 8px 0 8px;
+  border-width: 0;
+  line-height: 20px;
+  background-color: #E2E0D6;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #512888;
+}
+
+ul.primary li a:hover {
+  background-color: #ECD391;
+  border-color: #ECD391;
+}
+
+ul.primary li a:hover .tab,
+ul.primary li.active a:hover .tab {
+  background-color: #ECD391;
+  border-color: #ECD391;
+}
+
+ul.primary li.active a {
+  border: none;
+}
+
+ul.primary li.active a .tab {
+  background-color: white;
+  border-bottom: 1px solid white;
+}
+
+ul.secondary {
+  margin: 0;
+  padding: 0 0 0 5px; /* LTR */
+  list-style: none;
+  white-space: nowrap;
+  background-color: #512888;
+}
+
+ul.secondary li {
+  float: left; /* LTR */
+  margin: 0 5px 0 0;
+  padding: 5px 0;
+  border-right: none; /* LTR */
+}
+
+ul.secondary a {
+  display: block;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #512888;
+  background-color: #CCCCCC;
+  text-decoration: none;
+  color: #333333;
+}
+
+ul.secondary a .tab {
+  display: block;
+  height: 18px; /* 24px (parent) - 6px (padding) */
+  margin: 0;
+  padding: 3px 8px;
+  line-height: 18px;
+}
+
+ul.secondary a:hover,
+ul.secondary a.active:hover {
+  background-color: #ECD391;
+}
+
+ul.secondary a.active {
+  border: none;
+  background-color: white;
+}
