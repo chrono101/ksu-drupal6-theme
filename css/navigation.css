@@ -1,0 +1,151 @@
+/* $Id: navigation.css,v 1.5 2009/11/04 19:42:41 johnalbin Exp $ */
+
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+}
+
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+}
+
+#secondary-menu {
+}
+
+#secondary-menu a:link, 
+#secondary-menu a:visited {
+}
+
+#secondary-menu a:hover, 
+#secondary-menu a:focus {
+}
+/*
+* Breadcrumbs
+*/
+
+#breadcrumb {
+  margin-left: 220px;
+  font-size: 9px;
+}
+
+#breadcrumb a:link,
+#breadcrumb a:visited,
+#breadcrumb a:active,
+#breadcrumb a:hover {
+  color: #666666;
+}
+
+/*
+* Navigation Menu
+*/
+.block {
+}
+
+.block ul {
+  list-style: none;
+}
+
+.block ul.menu,ul.nice-menu {
+  padding-left: 0;
+
+}
+
+.block .content {
+
+}
+
+/* Applies to all menus */
+ul.menu {
+}
+
+/* Applies to all menu li's */
+ul.menu li {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/* Applies to all menu li a's */
+ul.menu li a {
+  background-color: #e2e0d6;
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  font-size: 0.8461em; /* 1em = 13px: 0.8461em * 13px = 11px */
+  font-weight: bold;
+  line-height: 16px;
+  padding: 7px 5px 7px 10px;
+  border-bottom: solid 1px white;
+}
+
+ul.menu a:hover,
+ul.menu a:active,
+ul.menu ul.menu a:hover,
+ul.menu ul.menu a:active {
+  background-color: #ecd391;
+}
+
+.content > ul.menu > li.first > a {
+  border-radius: 8px 8px 0 0;
+}
+
+.content > ul.menu > li.last > a { 
+  border-radius: 0 0 8px 8px;
+}
+
+ul.menu li ul.menu {
+}
+
+ul.menu li ul li {
+}
+
+ul.menu li ul.menu li a {
+  margin-left: 20px;
+  border-bottom: none;
+  background-color: #eeede8;
+}
+
+ul.menu li ul.menu li ul.menu li a {
+  margin-left: 40px;
+}
+
+
+
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}
+
+/*
+ * Pager
+ */
+
+.pager-current { 
+  font-weight: bold;
+  background-color: #cbebf9;
+}

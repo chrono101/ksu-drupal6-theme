@@ -1,0 +1,599 @@
+/* $Id: pages.css,v 1.18.2.3 2010/06/26 17:18:58 johnalbin Exp $ */
+
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body and Page
+ */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  }
+
+#page-wrapper {
+  background-color: #eeede8;
+  padding: 0 0 0 0;
+}
+
+#page {
+
+}
+
+/*
+ * The skip navigation link will be completely hidden until a user tabs to the
+ * link. See http://www.webaim.org/techniques/skipnav/
+ */
+#skip-link a,
+#skip-link a:visited {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+  position: static;
+  width: 100%;
+  height: auto;
+  padding: 2px 0 3px 0;
+}
+
+/*
+ * Header (general styles)
+ */
+#header {
+  background-image: url(../images/header-top-bg.jpg);
+  background-repeat: repeat-x;
+}
+
+#header .section {
+  background-image: url(../images/header-masthead-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.region-header /* Wrapper for any blocks placed in the header region */ {
+}
+
+#unitbar {
+  background-color: #e2e0d6;
+}
+
+#unitbar .section {
+  height: auto;
+  background-image: none;
+  padding-bottom: 5px;
+}
+
+/* 
+ * Logo and Wordmark
+ */ 
+#logo /* Wrapping link for logo */ {
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+
+#logo img {
+  vertical-align: bottom;
+}
+
+#wordmark {
+  position: relative;
+  left: 14px;
+  top: 28px;
+}
+
+/* 
+ * Search Box Styles
+ */
+#search-box {
+  width: 205px;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  top: 53px;
+}
+
+#search-box label {
+  display: none;
+}
+
+#search-box input {
+  border: 1px solid #999;
+  color: #999;
+  font-size: 11px;
+  height: 20px;
+  padding: 0 0 0 3px;
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+#search-box input:focus {
+  border-color: #8cacbb;
+  color: #000;
+}
+
+#search-box a,
+#search-box a:link,
+#search-box a:hover,
+#search-box a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#search-box ul {
+  margin: 0;
+  padding: 0;
+}
+
+#search-box li {
+  display: inline;
+}
+
+#login, #logout {
+  position: absolute;
+  right: 0;
+}
+
+#account {
+  position: absolute;
+  right: 50px;
+}
+
+/* 
+ * Site Name and Slogan 
+ */
+
+#name-and-slogan {
+    padding: 12px 5px 5px 0;
+    text-align: right;
+}
+
+#site-name {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0 0 2px 0;
+}
+
+#site-name a:link,
+#site-name a:visited {
+  text-decoration: none;
+}
+
+#site-name a:hover,
+#site-name a:focus {
+  text-decoration: none;
+}
+
+#site-slogan {
+  font-size: 14px;
+  letter-spacing: 11px;
+  text-transform: uppercase;
+  margin: 0 0 0 0;
+}
+
+#site-slogan a:link,
+#site-slogan a:visited {
+  text-decoration: none;
+}
+
+#site-slogan a:hover,
+#site-slogan a:focus {
+  text-decoration: none;
+}
+
+/*
+ * Breadcrumbs
+ */
+
+.breadcrumb /* The path to the current page in the form of a list of links */ {
+  padding-bottom: 0; /* Undo system.css */
+  color: #000000;
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited,
+.breadcrumb a:active,
+.breadcrumb a:hover {
+  color: #333333;
+}
+
+/* Front Page Stuff */
+
+#promo-image {
+  height: 240px;
+  width: 760px;
+}
+
+/* 
+ * qTips (need to seperate out)
+ */ 
+
+.tooltip {
+  color: #50017c;
+}
+
+.tooltip a:hover, a:focus {
+  color: #50017c;
+  text-decoration: none;
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  background-color: #ffffff;
+}
+
+#main {
+}
+
+/*
+ * Content
+ */
+#content {
+}
+
+#content .section {
+}
+
+#mission /* The mission statement of the site (displayed on homepage) */ {
+}
+
+.region-content-top /* Wrapper for any blocks placed in the "content top" region */ {
+}
+
+h1.title, /* The title of the page */
+h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+h3.title /* Comment title */ {
+  margin: 0;
+}
+
+tr.even /* Some tables have rows marked even or odd. */ {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
+}
+
+div.status /* Normal priority messages */ {
+}
+
+div.warning,
+tr.warning /* Medium priority messages */ {
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error /* High priority messages. See also the .error declaration below. */ {
+}
+
+.error /* Errors that are separate from div.messages status messages. */ {
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages. */ {
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+div.tabs /* See also the tabs.css file. */ {
+}
+
+.help /* Help text on a page */ {
+  margin: 1em 0;
+}
+
+.more-help-link /* Link to more help */ {
+  font-size: 0.85em;
+  text-align: right;
+}
+
+#content-area /* Wrapper for the actual page content */ {
+}
+
+ul.links /* List of links */ {
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul.links.inline {
+  margin: 0;
+  display: inline;
+}
+
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+
+.pager /* A list of page numbers when more than 1 page of content is available */ {
+  clear: both;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.pager a,
+.pager strong.pager-current /* Each page number in the pager list */ {
+  padding: 0.5em;
+}
+
+.feed-icons /* The links to the RSS or Atom feeds for the current list of content */ {
+  margin: 1em 0;
+}
+
+.more-link /* Aggregator, blog, and forum more link */ {
+  text-align: right; /* LTR */
+}
+
+.region-content-bottom /* Wrapper for any blocks placed in the "content bottom" region */ {
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+.region-sidebar-first {
+
+}
+
+.region-sidebar-first .section {
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+.region-sidebar-second {
+}
+
+.region-sidebar-second .section {
+}
+
+/*
+ * Footer
+ */
+#footer {
+}
+
+#footer .section {
+    background-color: #dddcce;
+}
+
+#bldg-outline {
+    height: 174px;
+    background-color: #ffffff !important;
+}
+
+#ksu-footer {
+    background: #512888; /* Old browsers */
+    background: -moz-linear-gradient(top, #512888 0%, #3d2361 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#512888), color-stop(100%,#3d2361)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #512888 0%,#3d2361 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #512888 0%,#3d2361 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #512888 0%,#3d2361 100%); /* IE10+ */
+    background: linear-gradient(top, #512888 0%,#3d2361 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#512888', endColorstr='#3d2361',GradientType=0 ); /* IE6-9 */
+    clear: both;
+    height: 80px;
+    color: #ffffff;
+}
+
+#ksu-footer .section {
+    background-color: inherit;
+}
+
+#footer-links {
+    padding: 20px 0 0 20px;
+}
+
+#footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+    font-size: 12px;
+}
+
+#footer-links li {
+    display: block;
+    float: left;
+    margin-right: 42px;
+}
+
+#footer-links li a, 
+#footer-links li a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-addr {
+    clear: left;
+    color: #aca697;
+    font-size: 11px;
+    padding: 6px 0 0 20px;
+    text-align: center;
+}
+
+#footer-addr ul {
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+    font-size: 11px;
+}
+
+#footer-addr li {
+    display: block;
+    float: left;
+    margin-right: 23px;
+}
+
+#footer-addr li a,
+#footer-addr li a:link,
+#footer-addr li a:visited {
+    color: #aca697;
+    text-decoration: none;
+}
+
+#footer-addr li a:hover,
+#footer-addr li a:active {
+    text-decoration: underline;
+}
+
+#footer .section {
+    margin: auto;
+    width: 960px;
+}
+
+#footer-message /* Wrapper for the footer message from Drupal's "Site information"
+                   and for any blocks placed in the footer region */ {
+    font-size: 12px;
+    padding: 10px 0 10px 20px;
+}
+
+#footer-social {
+    float: right;
+    margin: 0 10px 5px 5px;
+    overflow: hidden;
+}
+
+#footer-social li {
+    display: block;
+    float: left;
+}
+
+#footer-social > li > a {
+    box-shadow: 3px 3px 3px #222222;
+    margin: 0 10px 10px 0;
+}
+
+.ksu-facebook-icon {
+    background: url("../images/social-media.png") no-repeat scroll -58px 0 transparent;
+    display: block;
+    height: 29px;
+    width: 29px;
+}
+.ksu-twitter-icon {
+    background: url("../images/social-media.png") no-repeat scroll -87px 0 transparent;
+    display: block;
+    height: 29px;
+    width: 29px;
+}
+.ksu-youtube-icon {
+    background: url("../images/social-media.png") no-repeat scroll -29px 0 transparent;
+    display: block;
+    height: 29px;
+    width: 29px;
+}
+.ksu-rss-icon {
+    background: url("../images/social-media.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 29px;
+    width: 29px;
+}
+.ksu-gowalla-icon {
+    background: url("../images/social-media.png") no-repeat scroll -116px 0 transparent;
+    display: block;
+    height: 29px;
+    width: 29px;
+}
+.ksu-gplus-icon {
+    background: url("../images/social-media.png") no-repeat scroll -145px 0 transparent;
+    display: block;
+    height: 29px;
+    width: 29px;
+}
+.ksu-foursq-icon {
+    background: url("../images/social-media.png") no-repeat scroll -174px 0 transparent;
+    display: block;
+    height: 29px;
+    width: 29px;
+}
+
+.region-footer {
+}
+
+/*
+ * Closure
+ */
+.region-page-closure /* Wrapper for any blocks placed in the closure region */ {
+}
+
+/*
+ * Drupal boxes
+ *
+ * Wrapper for Comment form, Comment viewing options, Menu admin, and
+ * Search results.
+ */
+.box /* Wrapper for box */ {
+}
+
+.box h2 /* Box title */ {
+}
+
+.box .content /* Box's content wrapper */ {
+}
+
+/*
+ * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+.element-hidden {
+  display: none;
+}
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user. Must
+ * not be used for focusable elements (such as links and form elements) as this
+ * causes issues for keyboard only or voice recognition users. "!important" is
+ * used to prevent unintentional overrides.
+ */
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
