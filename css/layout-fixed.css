@@ -1,5 +1,3 @@
-/* $Id: layout-fixed.css,v 1.17 2009/11/05 12:09:53 johnalbin Exp $ */
-
 /**
  * @file
  * Layout Styling (DIV Positioning)
@@ -135,7 +133,7 @@ body {
 .with-navigation #content,
 .with-navigation .region-sidebar-first,
 .with-navigation .region-sidebar-second {
-  margin-top: 62px; /* Set this to the same value as the navigation height above. */
+  margin-top: 52px; /* Set this to the same value as the navigation height above. */
 }
 
 #navigation .section {
@@ -213,6 +211,7 @@ body {
 }
 
 #navigation {
+  /*overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
 }
 
 /*

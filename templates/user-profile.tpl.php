@@ -75,10 +75,8 @@
     <h2>Other Notable Achievements</h2>
     <?php print check_markup($account->profile_other_notable_achievements) ?>
   <?php endif; ?>
-
   <?php
     $view = views_get_view('Grants');
     print $view->execute_display('Default', array($account->name));
   ?>
-
 </div>

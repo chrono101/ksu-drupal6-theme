@@ -33,6 +33,10 @@ ul.sf-menu {
   visibility: hidden;
 }
 
+.sf-menu ul {
+  padding-left: 0;
+}
+
 .sf-menu a {
   border-top: none;
   text-decoration: none;

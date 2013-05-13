@@ -1,4 +1,54 @@
+<<<<<<< HEAD
 // $Id: README.txt,v 1.3 2009/11/08 18:28:48 johnalbin Exp $
+=======
+Kansas State University Drupal Theme
+-------------------------------------
+Based on a Zen child theme for Drupal 6.x. Originally created by Cole Cooper 
+for the Department of Computing and Informaiton Sciences to match KSU branding.
+The theme was originally created in 2011.
+
+https://github.com/chrono101/ksu-drupal6-theme
+
+Original Author: Cole Cooper (colecoop@ksu.edu)
+Last Modified By: Cole Cooper (colecoop@ksu.edu)
+Last Modified Date: 4/16/2013
+
+Installation
+-------------------------------------
+This theme is a Zen child theme, which requires than Zen be installed for it to
+work. You may find the installation directions for Zen in the Zen theme 
+documentation.
+
+Zen Project: http://drupal.org/project/zen
+
+To install this theme, simply copy the ksu2011/ folder into your Drupal site's
+themes folder (/sites/all/themes/). Then go to /admin/build/themes on your site
+and enable the Kansas State University Theme.
+
+Configuration
+-------------------------------------
+To configure your theme, go to /admin/build/themes/settings/ksu2011
+
+To configure Nice Menus, you must go to /admin/build/themes/settings and set
+"Path to Custom Nice menus CSS file" to:
+"sites/all/themes/ksu2011/css/nice_menus_default.css"
+
+To configure Superfish Menus, you must go to /admin/build/block/list, find the 
+block that has your menu, and ensure that the "Style" option is set to "None". 
+Otherwise, Superfish's default stylesheet will override those in this theme.
+
+To change what appears in the search box, edit js/header.js and change what the 
+string value is inserted into the search box.
+
+To change the footer image, simply replace images/footer.png with your own unit's
+preferred image, also named footer.png. It must be 960px wide, and the height 
+doesn't matter. 
+
+
+
+Original Zen README.txt follows
+-------------------------------------
+>>>>>>> f8113392c5fd61ffa738b8ab9701f95db3d2ab97
 
 BUILD YOUR OWN SUB-THEME
 ------------------------
