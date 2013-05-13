@@ -139,7 +139,7 @@
           <a id="atoz" href="http://www.ksu.edu/directories/">Browse A-Z</a>
             <?php global $user;
               if(!$user->uid) { 
-                print "<a id=\"login\" href=\"/user\">Login</a>"; 
+                print "<a id=\"login\" href=\"/user\">Sign in</a>"; 
               } 
               else { 
                 print "<a id=\"account\" href=\"/user\">My Account</a>"; 
@@ -267,7 +267,7 @@
             <ul>
               <li><a href="http://www.ksu.edu/contact/" target="_parent">Contact us</a></li>
               <li><a href="http://www.ksu.edu/advisories/" target="_parent">Emergency</a></li>
-              <li><a href="http://www.ksu.edu/disclosures/" target="_parent">Statements and Disclosures</a></li>
+              <li><a href="http://www.ksu.edu/disclosures/" target="_parent">Statements and disclosures</a></li>
             </ul>
           </div>
           <ul id="footer-social">
