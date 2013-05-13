@@ -96,17 +96,9 @@ function ksu2011_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-<<<<<<< HEAD
 function ksu2011_preprocess_page(&$vars, $hook) {
   $vars['head'] .= '<meta http-equiv="x-ua-compatible" content="IE=9">' . "\n";
 }
-=======
-/* -- Delete this line if you want to use this function
-function ksu2011_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
-}
-// */
->>>>>>> f8113392c5fd61ffa738b8ab9701f95db3d2ab97
 
 /**
  * Override or insert variables into the node templates.
@@ -121,11 +113,7 @@ function ksu2011_preprocess_node(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-<<<<<<< HEAD
-  // ksu_preprocess_node_page() or ksu_preprocess_node_story().
-=======
   // ksu2011_preprocess_node_page() or ksu2011_preprocess_node_story().
->>>>>>> f8113392c5fd61ffa738b8ab9701f95db3d2ab97
   $function = __FUNCTION__ . '_' . $vars['node']->type;
   if (function_exists($function)) {
     $function($vars, $hook);
@@ -160,7 +148,6 @@ function ksu2011_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
-<<<<<<< HEAD
 
 // This overrides Webform's email headers, so that they send HTML mail instead of plaintext.
 /*function phptemplate_webform_mail_headers($node, $submission, $email) {
@@ -170,5 +157,3 @@ function ksu2011_preprocess_block(&$vars, $hook) {
     );
     return $headers;
 }*/
-=======
->>>>>>> f8113392c5fd61ffa738b8ab9701f95db3d2ab97

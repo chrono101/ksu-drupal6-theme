@@ -77,6 +77,8 @@
   <?php endif; ?>
   <?php
     $view = views_get_view('Grants');
-    print $view->execute_display('Default', array($account->name));
+    if($view) {
+      print $view->execute_display('Default', array($account->name));
+    }
   ?>
 </div>
