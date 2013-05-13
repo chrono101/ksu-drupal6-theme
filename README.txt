@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// $Id: README.txt,v 1.3 2009/11/08 18:28:48 johnalbin Exp $
-=======
 Kansas State University Drupal Theme
 -------------------------------------
 Based on a Zen child theme for Drupal 6.x. Originally created by Cole Cooper 
@@ -48,7 +45,6 @@ doesn't matter.
 
 Original Zen README.txt follows
 -------------------------------------
->>>>>>> f8113392c5fd61ffa738b8ab9701f95db3d2ab97
 
 BUILD YOUR OWN SUB-THEME
 ------------------------
