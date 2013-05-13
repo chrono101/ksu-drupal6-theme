@@ -58,7 +58,8 @@ body {
 /*
  * Header (general styles)
  */
-#header {ckground: #4f2684;
+#header {
+  background-color: #512888;
   background: -moz-linear-gradient(top, #4f2684 0%, #7137bd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4f2684), color-stop(100%,#7137bd));
   background: -webkit-linear-gradient(top, #4f2684 0%,#7137bd 100%);
