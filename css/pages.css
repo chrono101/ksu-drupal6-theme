@@ -97,7 +97,9 @@ body {
 #wordmark {
   position: relative;
   left: 14px;
-  top: 28px;
+  top: 32px;
+  height: 70px;
+  width: 290px;
 }
 
 /* 
