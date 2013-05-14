@@ -113,6 +113,7 @@
 <head>
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
+
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
@@ -126,17 +127,16 @@
 
     <div id="header"><div class="section clearfix">
       
-    <a href="http://www.ksu.edu/"><img id="wordmark" src="/sites/all/themes/ksu2011/images/wordmark.png" alt="Kansas State University" /></a>
+    <a href="http://www.k-state.edu/"><img id="wordmark" src="<?php print $base_path . path_to_theme(); ?>/images/wordmark.png" alt="Kansas State University" /></a>
       
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       <?php endif; ?>
-
       
       <?php if ($search_box): ?>
         <div id="search-box">
           <?php print $search_box; ?>
-          <a id="atoz" href="http://www.ksu.edu/directories/">Browse A-Z</a>
+          <a id="atoz" href="http://www.k-state.edu/directories/">Browse A-Z</a>
             <?php global $user;
               if(!$user->uid) { 
                 print "<a id=\"login\" href=\"/user\">Sign in</a>"; 
@@ -146,16 +146,12 @@
                 print "<a id=\"logout\" href=\"/logout\">Logout</a>";
               } 
             ?>
-          </ul>
         </div>
       <?php endif; ?>
 
       <?php print $header; ?>
       
     </div> <!-- /.section -->
-    <div id="gradient">
-    </div>
-    
     <div id="unitbar">
       <div class="section clearfix">
         <?php if ($site_name || $site_slogan): ?>
@@ -240,7 +236,7 @@
     <div id="footer">
       <?php if ($footer || $footer_message || $secondary_links): ?>
         <div id="bldg-outline" class="section">
-            <img src="/<?php print $directory; ?>/images/footer.png" />
+            <img src="<?php print $base_path . path_to_theme(); ?>/images/footer.png" alt="<?php print $head_title; ?>"/>
         </div>
         <div class="section">
                   <?php print theme(array('links__system_secondary_menu', 'links'), $secondary_links,
@@ -265,9 +261,9 @@
         <div class="section">      
           <div id="footer-links">
             <ul>
-              <li><a href="http://www.ksu.edu/contact/" target="_parent">Contact us</a></li>
-              <li><a href="http://www.ksu.edu/advisories/" target="_parent">Emergency</a></li>
-              <li><a href="http://www.ksu.edu/disclosures/" target="_parent">Statements and disclosures</a></li>
+              <li><a href="http://www.k-state.edu/contact/" target="_parent">Contact us</a></li>
+              <li><a href="http://www.k-state.edu/advisories/" target="_parent">Emergency</a></li>
+              <li><a href="http://www.k-state.edu/disclosures/" target="_parent">Statements and disclosures</a></li>
             </ul>
           </div>
           <ul id="footer-social">
