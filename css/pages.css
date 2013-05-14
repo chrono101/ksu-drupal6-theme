@@ -77,13 +77,21 @@ body {
 }
 
 #unitbar {
-  background-color: #e2e0d6;
 }
 
 #unitbar .section {
   height: auto;
   background-image: none;
-  padding-bottom: 5px;
+  margin: 0 5px 5px 5px;
+  padding: 6px 10px 10px;
+  background-color: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e2e0d6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e2e0d6));
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e2e0d6 100%);
+  background: -o-linear-gradient(top, #ffffff 0%,#e2e0d6 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%,#e2e0d6 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#e2e0d6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e0d6',GradientType=0 );
 }
 
 /* 
@@ -169,14 +177,11 @@ body {
  */
 
 #name-and-slogan {
-    padding: 12px 5px 5px 0;
-    text-align: right;
 }
 
 #site-name {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 30px;
   margin: 0 0 2px 0;
 }
 
@@ -192,8 +197,6 @@ body {
 
 #site-slogan {
   font-size: 14px;
-  letter-spacing: 11px;
-  text-transform: uppercase;
   margin: 0 0 0 0;
 }
 

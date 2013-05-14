@@ -159,32 +159,32 @@
       <?php print $header; ?>
       
     </div> <!-- /.section -->
-    <div id="unitbar">
-      <div class="section clearfix">
-        <?php if ($site_name || $site_slogan): ?>
-          <div id="name-and-slogan">
-            <?php if ($site_name): ?>
-              <h1 id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-            <?php endif; ?>
-  
-            <?php if ($site_slogan): ?>
-              <h2 id="site-slogan">
-                <?php print $site_slogan; ?>
-              </h2>
-            <?php endif; ?>
-        </div><!-- /#name-and-slogan -->
-      <?php endif; ?>
-
-      <?php print $breadcrumb; ?>
-    </div><!-- /.section -->
-  </div><!-- /#unitbar -->
-</div><!-- /#header -->
+    </div><!-- /#header -->
 
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
+      <div id="unitbar">
+        <div class="section clearfix">
+          <?php print $breadcrumb; ?>
+          
+          <?php if ($site_name || $site_slogan): ?>
+            <div id="name-and-slogan">
+              <?php if ($site_name): ?>
+                <h1 id="site-name">
+                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+                </h1>
+              <?php endif; ?>
+    
+              <?php if ($site_slogan): ?>
+                <h2 id="site-slogan">
+                  <?php print $site_slogan; ?>
+                </h2>
+              <?php endif; ?>
+            </div><!-- /#name-and-slogan -->
+          <?php endif; ?>
+      </div><!-- /.section -->
+    </div><!-- /#unitbar -->
 
-      <div id="content" class="column"><div class="section">
+    <div id="content" class="column"><div class="section">
 
         <?php if ($mission): ?>
           <div id="mission"><?php print $mission; ?></div>
