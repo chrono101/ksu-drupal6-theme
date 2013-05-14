@@ -106,6 +106,9 @@
  * @see zen_preprocess()
  * @see zen_process()
  */
+
+ /* Used to find the URL */
+ global $base_root;
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
@@ -113,6 +116,10 @@
 <head>
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
+  <meta property="og:image" content="<?php print $base_root .  $base_path . path_to_theme(); ?>/images/cis_logo_purple.png">
+  <meta property="og:title" content="<?php print $head_title; ?>">
+  <meta property="og:url" content="<?php print $base_root . "/" . $_GET['q']; ?>">
+  <meta property="og:site_name" content="<?php print $site_name; ?>">
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
