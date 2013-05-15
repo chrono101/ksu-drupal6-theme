@@ -35,11 +35,11 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0 0 0 0;
   margin: 0;
-  z-index: 998;
+  z-index: 300;
 }
 
 .block-nice_menus {
-  z-index: 998 !important;
+  z-index: 300 !important;
 }
 
 ul.nice-menu li {
