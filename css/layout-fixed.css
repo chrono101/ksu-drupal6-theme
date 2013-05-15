@@ -126,14 +126,14 @@ body {
   margin-left: 0; /* LTR */
   margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
-  height: 52px; /* The navigation can have any arbritrary height. 
+  height: 36px; /* The navigation can have any arbritrary height. 
                    Set this to the same value as the margin-top below. */
 }
 
 .with-navigation #content,
 .with-navigation .region-sidebar-first,
 .with-navigation .region-sidebar-second {
-  margin-top: 52px; /* Set this to the same value as the navigation height above. */
+  margin-top: 36px; /* Set this to the same value as the navigation height above. */
 }
 
 #navigation .section {
