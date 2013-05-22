@@ -11,11 +11,12 @@
 }
 
 .sf-menu.sf-primary-links {
-  width: 950px;
+  width: 852px;
   height: 36px;
-  padding-left: 0 !important;
+  padding-left: 98px !important;
   margin: 0 5px 0 5px;
   background-color: #512888;
+  border-bottom: 5px solid #ecd391;
 }
 
 .sf-menu ul,
@@ -78,7 +79,6 @@ ul.sf-menu {
 /* Set the first element to be wider */
 .sf-menu > li.first > a {
   color: #ffffff;
-  width: 155px;
   border-left: none;
   text-align: right;
   padding: 0 10px 0 10px;
@@ -86,7 +86,6 @@ ul.sf-menu {
 
 .sf-menu > li > a:hover,
 .sf-menu > li > a:active,
-.sf-menu > li:hover, 
 .sf-menu > li.sfHover > a {
   color: #333333;
   background-color: #ecd391; 
@@ -216,4 +215,9 @@ li.sf-megamenu-column ol li.last {
 li.sf-megamenu-column ol li a {
   padding-left: 20px !important;
   font-weight: normal !important;
+}
+
+.sf-menu li.active-trail > a {
+  background-color: #ecd391;
+  color: #333333;
 }

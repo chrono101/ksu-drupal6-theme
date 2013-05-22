@@ -113,7 +113,7 @@ body {
 }
 
 #content .section {
-    margin: 0 0 20px 5px;
+    margin: 10px 0 20px 5px;
     padding: 0 5px 0 5px;
 }
 
@@ -161,7 +161,7 @@ body {
 }
 
 .region-sidebar-first .section {
-  margin: 5px 0 0 0; /* LTR */
+  margin: 10px 0 0 0; /* LTR */
   padding: 0;
 }
 
