@@ -23,7 +23,6 @@ ul.primary {
   list-style: none;
   white-space: nowrap;
   line-height: normal;
-  border-radius: 3px 3px 0 0;
   border-bottom: 1px solid #512888;
   background-color: #512888;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#7346aa), to(#512888));
