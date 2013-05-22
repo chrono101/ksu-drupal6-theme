@@ -321,6 +321,7 @@ div.tabs /* See also the tabs.css file. */ {
 }
 
 #content-area /* Wrapper for the actual page content */ {
+  margin-top: 5px;
 }
 
 ul.links /* List of links */ {
