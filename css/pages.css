@@ -277,6 +277,10 @@ h3.title /* Comment title */ {
   margin: 0;
 }
 
+h1.title {
+  border-bottom: 3px solid #d1d1c9;
+}
+
 tr.even /* Some tables have rows marked even or odd. */ {
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
