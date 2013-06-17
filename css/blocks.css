@@ -19,6 +19,46 @@
     margin-bottom: 0;
 }
 
+/* Blocks that are on the homepage main content */
+.homepage-block {
+  float: left;
+  background-color: #EEEDE8;
+  border-radius: 8px 8px 8px 8px;
+  color: #333333;
+  margin-top: 20px;
+  min-height: 600px;
+  padding: 10px;
+}
+
+.homepage-left {
+  width: 355px;
+}
+
+.homepage-right {
+  width: 355px;
+  margin-left: 15px;
+}
+
+.homepage-full {
+  width: 745px;
+}
+
+/* Social Media links in unit block */
+ul.ksu-unit-social {
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+ul.ksu-unit-social li {
+  margin-left: 10px !important;
+  display: block;
+  float: left;
+}
+
+ul.ksu-unit-social > li:first-child {
+  margin-left: 0 !important;
+}
+
 .block.region-odd /* Zebra striping for each block in the region */ {
 }
 
