@@ -101,6 +101,10 @@ ul.ksu-unit-social > li:first-child {
   padding: 10px;
 }
 
+#block-views-Announcements-block_1 ul {
+  list-style-type: disc !important;
+}
+
 #block-views-promo_image-block_1 {
   background-color: inherit;
   border-radius: none;
