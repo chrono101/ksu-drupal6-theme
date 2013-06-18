@@ -119,6 +119,12 @@ ul.ksu-unit-social > li:first-child {
   padding: 10px;
 }
 
+/* Intranet Links block */
+#block-block-5 {
+  font-size: 11px;
+  padding: 10px;
+}
+
 #block-aggregator-category-1 /* Block for the latest news items in the first category */ {
 }
 
